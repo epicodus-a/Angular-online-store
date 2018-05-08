@@ -1,8 +1,8 @@
 <div class="edit p-3">
   <h3>Edit Album</h3>
-  <input type="text" class="form-control form-group" ngModel="selectedAlbum.title" placeholder="new Album title">
-  <input type="text" class="form-control form-group" ng-Model="selectedAlbum.artist" placeholder="new Album artist">
-  <input type="text" class="form-control form-group" ng-Model="selectedAlbum.escription" placeholder="new Album description">
+  <input type="text" class="form-control form-group" [(ngModel)]="selectedAlbum.title" placeholder="new Album title">
+  <input type="text" class="form-control form-group" [(ngModel)]="selectedAlbum.artist" placeholder="new Album artist">
+  <input type="text" class="form-control form-group" [(ngModel)]="selectedAlbum.description" placeholder="new Album description">
   <button (click)="beginUpdatingAlbum(selectedAlbum)" class="btn btn-success form-control">update</button>
 <hr>
 <button (click)="beginDeletingAlbum(selectedAlbum)" class="btn btn-outline-warning form-control">Delete</button>
