@@ -1,0 +1,12 @@
+<h3 class="mt-3 text-center">New Album</h3>
+
+<div class="add-form my-5">
+  <input type="text" #title class="form-control form-group" placeholder="Album Title">
+  <input type="text" #artist class="form-control form-group" placeholder="Album Artist">
+  <textarea #description cols="30" rows="10" class="form-control form-group" placeholder="Album description"></textarea>
+  <button (click)="submitForm(title.value, artist.value, description.value); title.value=''; artist.value=''; description.value=''" class="form-control form-group btn btn-info">Add</button>
+</div>
+
+<div class="mt-5">
+  <app-marketplace></app-marketplace>
+</div>

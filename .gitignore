@@ -41,3 +41,25 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+
+#Firebase credentials
+/src/app/api-keys.ts
+
+
+
+
+
+<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDjUz5GJjQdRyYi5SjiCsjtIiuYLYcz9w4",
+    authDomain: "online-store-23ee4.firebaseapp.com",
+    databaseURL: "https://online-store-23ee4.firebaseio.com",
+    projectId: "online-store-23ee4",
+    storageBucket: "online-store-23ee4.appspot.com",
+    messagingSenderId: "635959220341"
+  };
+  firebase.initializeApp(config);
+</script>
